@@ -11,3 +11,5 @@ A ideia é desenvolver um conteúdo educacional para web, utilizando diferentes 
 ### Obs.:
 
 Template utilizado: https://html5up.net/uploads/demos/twenty/index.html
+
+**Devs:** Arthur Vianna Landeo (ArthurVianna), Renan Romanio (renanromanio) e Tatiane Portela Medeiros (corvinau).
