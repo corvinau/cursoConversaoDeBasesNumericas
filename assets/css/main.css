@@ -1,10 +1,30 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900"); */
 /*
 	Twenty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+a.scrollup{
+    background: #105485;
+	height:32px;
+	width:32px;
+	color:#fff;
+	font-size:18px;
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:9999;
+	opacity:0.5;
+}
+a.scrollup:hover{
+	opacity:1;
+	color:#fff;
+}
 
 /* Reset */
 
@@ -1244,7 +1264,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 body, input, select, textarea {
-    color: #7c8081;
+    color: #383a3b;
     font-family: 'Lato', sans-serif;
     font-size: 15pt;
     font-weight: 300;
