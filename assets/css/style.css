@@ -4,3 +4,8 @@
 	height: 15vw;
 	border: solid #E6E6E6 0.7vw;
 }
+
+#image {
+    margin: 0 5px !important;
+	width: 20%;
+}

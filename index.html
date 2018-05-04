@@ -277,7 +277,7 @@
             <div class="row">
                 <div class="4u 12u(narrower)">
                     <section>
-                        <img src="assets/css/images/arthur.jpg" class="img-circle foto">
+                        <img src="assets/css/images/arthur.jpg" class="foto">
                         <header>
                             <h3>Arthur</h3>
                         </header>
@@ -288,7 +288,7 @@
                 </div>
                 <div class="4u 12u(narrower)">
                     <section>
-                        <img src="assets/css/images/renan.png" class="img-circle foto">
+                        <img src="assets/css/images/renan.png" class="foto">
                         <header>
                             <h3>Renan</h3>
                         </header>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="4u 12u(narrower)">
                     <section>
-                        <img src="assets/css/images/tatiane.jpg" class="img-circle foto">
+                        <img src="assets/css/images/tatiane.jpg" class="foto">
                         <header>
                             <h3>Tatiane</h3>
                         </header>
@@ -312,7 +312,34 @@
         </section>
 
         <footer id="footer">
-            <p>Informações UFPR</p>
+            <p>
+                Universidade Federal do Paraná - SEPT<br>
+                Rua Dr. Alcides Vieira Arcoverde, 1225<br>
+                Telefone: +41 3361-4921<br>
+                CEP: 81520-260 - Jardim das Américas - Curitiba (PR) - Brasil
+            </p>
+
+            <p><div id="googleMap" style="width:100%; height:400px;"></div></p>
+            <script>
+            function initMap() {
+                var uluru = {lat: -25.4568269, lng: -49.2360544};
+                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                  zoom: 15,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+            }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtm792RsXxaD1XDtrb96lxRjNfHSy_vhg&callback=initMap" type="text/javascript"></script>
+
+            <ul class="copyright">
+                <li class="image fit" id="image"><img src="assets/css/images/sept.jpg" alt="" /></li>
+                <li class="image fit" id="image"><img src="assets/css/images/ufpr.jpg" alt="" /></li>
+            </ul>
+
             <ul class="copyright">
                 <li>&copy; Untitled</li>
                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
