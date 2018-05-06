@@ -134,9 +134,28 @@
                     Continue conosco, agora vamos falar das conversões propriamente ditas!
                 </p>
 
+                <h2>Base binária para base decimal:</h2>
+                <p>
+                    Vamos chamar cada posição de um número na base binária de "bit". Sabemos que cada algarismo tem um peso referente à sua posição, e seu valor é calculado da seguinte forma: A x 2<sup>N</sup>, sendo "A" o algarismo e "N" a sua posição, lembrando que começamos sempre na posição 0 e a leitura é feita da direita para esquerda. Dessa forma temos por exemplo o número 1001 na base 2. Para achar seu valor na base decimal basta somarmos cada produto do algarismo pelo seu peso. Como estamos falando de binário, os únicos algarismos possíveis são 0 e 1, e como a multiplicação por 0 é sempre igual à 0, podemos entender que quando um bit é igual a "1" ele está ligado, e quando é igual à "0" está desligado. Assim podemos somar somente os produtos dos "bits ligados". Com base nisto, nós temos do exemplo: <strong>1</strong> x 2<sup>3</sup> + <strong>0</strong> x 2<sup>2</sup> + <strong>0</strong> x 2<sup>1</sup> + <strong>1</strong> x 2<sup>0</sup>. Somando os produtos dos bits ligados nós temos: (<strong>1</strong> x 2<sup>3</sup> = 8) + (<strong>1</strong> x 2<sup>0</sup> = 1) = 9. Logo, 1001 na base 2 é igual à 9 na base decimal.
+                </p>
+                <img src="assets/css/images/pic01.jpg" alt="" />
+                <img src="assets/css/images/pic01.jpg" alt="" />
+                <img src="assets/css/images/pic01.jpg" alt="" />
+                <img src="assets/css/images/pic01.jpg" alt="" />
+
                 <h2>Base decimal para base binária:</h2>
                 <p>
-                    Vamos chamar cada posição de um número na base binária de "bit". Sabemos que cada algarismo tem um peso referente à sua posição, e seu valor é calculado da seguinte forma: A x 2<sup>N</sup>, sendo "A" o algarismo e "N" a sua posição, lembrando que começamos sempre na posição 0 e a leitura é feita da direita para esquerda. Dessa forma temos por exemplo o número 1001 na base 2. Para achar seu valor na base decimal basta somarmos cada produto do algarismo pelo seu peso. Como estamos falando de binário, os únicos algarismos possíveis são 0 e 1, e como a multiplicação por 0 é sempre igual à 0, podemos entender que quando um bit é igual a "1" ele está ligado, e quando é igual à "0" está desligado. Assim podemos somar somente os produtos dos "bits ligados". Com base nisto, nós temos do exemplo: <strong>1</strong> x 2<sup>3</sup> + <strong>0</strong> x 2<sup>2</sup> + <strong>0</strong> x 2<sup>1</sup> + <strong>1</strong> x 2<sup>0</sup>. Somando os produtos dos bits ligados nós temos: (<strong>1</strong> x 2<sup>3</sup> = 8) + (<strong>1</strong> x 2<sup>0</sup> = 1) = 9.
+                    Vamos pegar como exemplo agora o número 47, na base decimal. Como queremos passar para a base binária(2), Vamos dividi-lo por 2. Preste atenção ao resto da divisão:
+                </p> 
+                <ul>47 / 2 : resto <strong>1</strong> e quociente <strong>23</strong>.</ul>
+                <ul><strong>Continue a divisão até o quociente ser 0 </strong>:</ul>
+                <ul>23 / 2 : resto <strong>1</strong>, quociente <strong>11</strong>.</ul>
+                <ul> 11 / 2 = resto <strong>1</strong> e quociente <strong>5</strong>.</ul>
+                <ul>5 / 2 = resto <strong>1</strong> e quociente <strong>2</strong>.</ul>
+                <ul>2 / 2 = resto <strong>0</strong> e quociente <strong>1</strong>.</ul>
+                <ul>1 / 2 = resto <strong>1</strong> e quociente <strong>0</strong>.</ul><br>
+                <p>
+                 Agora pegue os restos das divisões, da última para a primeira: 101111. Este é o numero 47 (decimal), na base binária! O nome deste método é divisões sucessivas. As imagens abaixo ilustram melhor esta conversão.
                 </p>
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
@@ -145,10 +164,13 @@
 
                 <h2>Base decimal para base octal:</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend consectetur faucibus. Vestibulum et nisi vitae ipsum gravida sollicitudin. Nam mollis varius nibh vitae varius. Pellentesque tristique et purus semper lacinia. Donec consequat, enim
-                    non vulputate placerat, lacus neque lobortis nunc, ut pretium massa orci id nunc. Vivamus dignissim a nunc vitae tempus. Suspendisse sit amet tellus nec massa commodo sollicitudin. Integer ipsum enim, blandit nec imperdiet ut, mollis
-                    non erat. Nulla mollis lacus a lorem consectetur ullamcorper.
+                	Para identificar um número na base octal (8), começamos ele sempre com a anotação "X": X7675. Nesta base temos os algarismos: 0 1 2 3 4 5 6 7. Podemos utilizar o mesmo método das divisões sucessivas, Mas neste caso, ao invés de dividirmos por 2, vamos dividir por 8:
                 </p>
+                <ul>50 / 8 : resto <strong>2</strong> e quociente <strong>6</strong>.</ul>
+                <ul>6 / 8 : resto <strong>6</strong>, quociente <strong>0</strong>.</ul>
+               <p>
+               		Pegando os restos, da última divisão para a primeira: 62. Temos então que 50 na base decimal é igual a 62 na octal. Ou seja: 50(base 10) = X62.
+               </p>
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
@@ -156,20 +178,76 @@
 
                 <h2>Base decimal para base hexadecimal:</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend consectetur faucibus. Vestibulum et nisi vitae ipsum gravida sollicitudin. Nam mollis varius nibh vitae varius. Pellentesque tristique et purus semper lacinia. Donec consequat, enim
-                    non vulputate placerat, lacus neque lobortis nunc, ut pretium massa orci id nunc. Vivamus dignissim a nunc vitae tempus. Suspendisse sit amet tellus nec massa commodo sollicitudin. Integer ipsum enim, blandit nec imperdiet ut, mollis
-                    non erat. Nulla mollis lacus a lorem consectetur ullamcorper.
+                    Agora que você já pegou bem a ideia das divisões sucessivas, vamos aplica-la na conversão para hexadecimal (base 16). Mas antes precisamos falar de uma coisinha importante.
+                </p>
+                <p>
+                	O máximo de algarismos que vimos até agora foi 10, na base decimal, são eles: 0 1 2 3 4 5 6 7 8 9. certo? Pois bem, agora vamos trabalhar com a base 16, ou seja, precisamos de novos algarismos!! Lembre-se que se você começar a combinar os algarismos a partir do 9, querendo representar o 10, 11, 12, 13 e etc, você está usando sistema <strong>DECIMAL</strong>. Para representarmos esses números em <strong>HEXADECIMAL</strong> precisamos de <strong>NOVOS</strong> símbolos para representar esses algarismos do 10 até o 15. É aí que entra os símbolos alfabéticos. Isso mesmo, vamos usar letras para representar os algarismos do 10 ao 15. Ou seja, a partir de agora, quando falarmos em A, B, C, D, E, F, você deverá entender 10, 11, 12,
+                	, 13, 14, 15. Se liga na tabela: 
+                </p>
+                <table class="default">
+                    <tr>
+                        <td><strong>NÚMEROS NA BASE DECIMAL</strong></td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>                                                
+                    </tr>
+                    <tr>
+                        <td><strong>NÚMEROS NA BASE HEXADECIMAL</strong></td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+                <p>
+                	Assim como usamos o "x" para identificar um número em octal, usamos o "0x" para identificarmos um número em hexadecimal.
+                </p>
+                <p>Com tudo isso explicado, agora podemos exemplificar a conversão de decimal para hexadecimal. Vamos usar como exemplo o número 1150:
+                </p>
+                <ul>1150 / 16 : resto <strong>14</strong> e quociente <strong>71</strong>.</ul>
+                <ul>71 / 16 : resto <strong>7</strong>, quociente <strong>4</strong>.</ul>
+                <ul>4 / 16 : resto <strong>4</strong> e quociente <strong>0</strong>.</ul>
+                <p>
+                	Pegando os restos das divisões, da última para a primeira temos: 4 7 14. Como estamos falando de hexadecimal, vamos trocar 14 por E. Assim, temos o valor 47E, ou seja, <strong>1150(base 10) = 0x47E</strong>
                 </p>
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
-
                 <h2>Base binária para base octal:</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend consectetur faucibus. Vestibulum et nisi vitae ipsum gravida sollicitudin. Nam mollis varius nibh vitae varius. Pellentesque tristique et purus semper lacinia. Donec consequat, enim
-                    non vulputate placerat, lacus neque lobortis nunc, ut pretium massa orci id nunc. Vivamus dignissim a nunc vitae tempus. Suspendisse sit amet tellus nec massa commodo sollicitudin. Integer ipsum enim, blandit nec imperdiet ut, mollis
-                    non erat. Nulla mollis lacus a lorem consectetur ullamcorper.
+                	Você concorda comigo que 8 é igual à 2<sup>3</sup>? Então vamos dividir o número binário em grupos de 3 bits. Por exemplo, o número 100101101 fica 100 | 101 | 101. 
+                </p>
+                <p>
+                	Agora vamos converter cada grupo separadamente para a base decimal:<br>
+                	100 => 4 | 101 => 5 | 101 => 5 <br>
+                	Pegando cada número decimal na sequencia temos 455. Logo, 100101101(base 2) é igual à x455.
+                	Fácil, não?
                 </p>
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
@@ -178,9 +256,12 @@
 
                 <h2>Base binária para base hexadecimal:</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend consectetur faucibus. Vestibulum et nisi vitae ipsum gravida sollicitudin. Nam mollis varius nibh vitae varius. Pellentesque tristique et purus semper lacinia. Donec consequat, enim
-                    non vulputate placerat, lacus neque lobortis nunc, ut pretium massa orci id nunc. Vivamus dignissim a nunc vitae tempus. Suspendisse sit amet tellus nec massa commodo sollicitudin. Integer ipsum enim, blandit nec imperdiet ut, mollis
-                    non erat. Nulla mollis lacus a lorem consectetur ullamcorper.
+                    E agora, 16 não igual à 2<sup>4</sup>? Então seguindo a ideia o ítem anterior, vamos separar o número em binário agora em grupos de <strong>4 BITS</strong>. O mesmo número do ítem anterior neste caso ficaria: 1 | 0010 | 1101.
+                </p>
+                <p>
+                	Convertendo cada grupo para a base decimal temos:<br>
+                	1 => 1 | 0010 => 2 | 1101 => 13<br>
+                	Pegando cada número decimal na sequência temos 1 2 13. Como estamos falando de hexadecimal precisamos converter o 13 para o respectivo valor no sistema, que no caso é "D". Então temos 12D. Logo, 100101101(base 2) = 0x12D.
                 </p>
                 <img src="assets/css/images/pic01.jpg" alt="" />
                 <img src="assets/css/images/pic01.jpg" alt="" />
