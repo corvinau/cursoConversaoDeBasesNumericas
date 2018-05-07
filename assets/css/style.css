@@ -17,3 +17,21 @@ ul{
 .hexa{
 	text-align: left;
 }
+
+.exemplo{
+	width: 50vw;
+	margin-left:25%;
+	margin-right:25%;
+	margin-bottom: 6vw;
+}
+
+#logos{
+	background-color: #105485;
+	padding: 3vw;
+	margin-bottom: 4vw;
+
+}
+
+.copyright{
+	margin-left: 2vw;
+}
