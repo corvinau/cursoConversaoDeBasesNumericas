@@ -10,11 +10,16 @@
 	width: 20%;
 }
 
-ul{
-	text-align: left;
+#division ul {
+    margin: 0 0 0.8em 0;
 }
 
-.hexa{
+#decimal-hexadecimal {
+	width: 100%;
+	margin: 0;
+}
+
+.hexa {
 	text-align: left;
 }
 
