@@ -2356,6 +2356,7 @@ body.index #main {
     }
     section.special h2~p {
         text-align: justify;
+        margin: 0 15px;
     }
     /* Section/Article */
     section {
@@ -2437,7 +2438,7 @@ body.index #main {
         transition: transform 0.5s ease;
         padding-bottom: 1px;
     }
-    #navButton {
+    /* #navButton {
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
@@ -2495,7 +2496,7 @@ body.index #main {
         position: absolute;
         top: 10px;
         width: 60px;
-    }
+    } */
     #navPanel {
         -moz-backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
@@ -2566,12 +2567,12 @@ body.index #main {
         -ms-transform: translateX(275px);
         transform: translateX(275px);
     }
-    body.navPanel-visible #navButton {
+    /* body.navPanel-visible #navButton {
         -moz-transform: translateX(275px);
         -webkit-transform: translateX(275px);
         -ms-transform: translateX(275px);
         transform: translateX(275px);
-    }
+    } */
     body.navPanel-visible #navPanel {
         -moz-transform: translateX(0);
         -webkit-transform: translateX(0);
@@ -2670,9 +2671,9 @@ body.index #main {
         padding: 6em 0;
     }
     #banner .inner {
-        background: none;
+        /* background: none; */
         display: block;
-        padding: 0 1.5em;
+        padding: 1.5em 1.5em;
     }
     #banner .inner header h2 {
         font-size: 1.5em;
@@ -2710,7 +2711,7 @@ body.index #main {
         border: 0;
     }
     /* Off-Canvas Navigation */
-    #navButton .toggle:before {
+    /* #navButton .toggle:before {
         top: 8px;
         left: 8px;
         width: 50px;
@@ -2722,7 +2723,7 @@ body.index #main {
         left: 8px;
         width: 50px;
         height: 34px;
-    }
+    } */
 }
 
 form {
