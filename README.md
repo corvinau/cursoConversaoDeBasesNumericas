@@ -12,4 +12,4 @@ A ideia é desenvolver um conteúdo educacional para web, utilizando diferentes 
 
 Template utilizado: https://html5up.net/uploads/demos/twenty/index.html
 
-**Devs:** Arthur Vianna Landeo (ArthurVianna), Renan Romanio (renanromanio) e Tatiane Portela Medeiros (corvinau).
+**Devs:** Arthur Vianna Landeo ([ArthurVianna](https://github.com/ArthurVianna)), Renan Romanio ([renanromanio](https://github.com/renanromanio)) e Tatiane Portela Medeiros ([corvinau](https://github.com/corvinau)).
