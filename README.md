@@ -1,4 +1,4 @@
-# cursoErgonomia
+# Curso de Conversão de Bases Numéricas
 
 Trabalho desenvolvido para a matéria de Ergonomia das Interfaces de Aplicações, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas - UFPR.
 
